@@ -2593,6 +2593,17 @@
       }
     },
     {
+  "id": "te-ara-hura-hover",
+  "type": "line",
+  "source": "te-ara-hura",
+  "paint": {
+    "line-color": "#ff0000",
+    "line-width": 5,
+    "line-opacity": 0.7,
+    "line-dasharray": [2, 2]
+  }
+    },
+    {
       "id": "roads_labels_major",
       "type": "symbol",
       "source": "protomaps",
