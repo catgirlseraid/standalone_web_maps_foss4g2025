@@ -41,15 +41,16 @@
   unit: 'metric'
 }), 'bottom-left');
 
-map.on('mouseenter', 'te-ara_hura', function() {
-  map.setLayoutProperty('te-ara_hura', 'visibility', 'none');
+map.on('mouseenter', 'trail-line', () => {
   map.setLayoutProperty('te-ara-hura-hover', 'visibility', 'visible');
+  map.getCanvas().style.cursor = 'pointer';
 });
 
-map.on('mouseleave', 'te-ara-hura-hover', function() {
-  map.setLayoutProperty('te-ara_hura', 'visibility', 'visible');
+map.on('mouseleave', 'trail-line', () => {
   map.setLayoutProperty('te-ara-hura-hover', 'visibility', 'none');
+  map.getCanvas().style.cursor = '';
 });
+
   </script>
 </body>
 </html>

@@ -2596,6 +2596,7 @@
   "id": "te-ara-hura-hover",
   "type": "line",
   "source": "te-ara-hura",
+      "layout": {"visibility": "none"},
   "paint": {
     "line-color": "#ff0000",
     "line-width": 5,
