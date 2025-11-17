@@ -10,7 +10,11 @@
   <link href="lib/maplibre-gl.5.10.0.css" rel="stylesheet" />
 
   <script src="lib/pmtiles.4.3.0.js"></script>
-  
+  <script>
+  let protocol = new pmtiles.Protocol();
+  maplibregl.addProtocol("pmtiles", protocol.tile);
+</script>
+
   <style>
     /* Required CSS statements defining the map to be the full size of the viewport*/
     #map {
